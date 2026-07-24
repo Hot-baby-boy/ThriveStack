@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Space_Grotesk, Bricolage_Grotesque } from "next/font/google";
 import { Nav } from "@/components/sections/Nav";
 import { Footer } from "@/components/sections/Footer";
+import { SITE_URL } from "@/lib/config";
 import "./globals.css";
 
 const spaceGrotesk = Space_Grotesk({
@@ -16,12 +17,28 @@ const bricolage = Bricolage_Grotesque({
   weight: ["600", "700", "800"],
 });
 
+const title = "ThriveStack, Digital Growth & Product Agency";
+const description =
+  "ThriveStack helps businesses build, grow, and scale online through branding, websites, custom software, and AI solutions.";
+
 export const metadata: Metadata = {
-  title: "ThriveStack, Digital Growth & Product Agency",
-  description:
-    "ThriveStack helps businesses build, grow, and scale online through branding, websites, custom software, and AI solutions.",
+  metadataBase: new URL(SITE_URL),
+  title,
+  description,
   icons: {
     icon: "/favicon.svg",
+  },
+  openGraph: {
+    title,
+    description,
+    url: SITE_URL,
+    siteName: "ThriveStack",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title,
+    description,
   },
 };
 
