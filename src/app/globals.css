@@ -1,0 +1,85 @@
+@import "tailwindcss";
+
+:root {
+  /* Core palette — preserved from reference design */
+  --black: #000000;
+  --dark: #0d0d0d;
+  --card: #111111;
+  --surface-2: #161616;
+  --teal: #00c4c8;
+  --teal-alt: #2cbfcc;
+  --teal-glow: rgba(0, 196, 200, 0.15);
+  --white: #ffffff;
+  --gray: #aaaaaa;
+  --gray-2: #666666;
+  --border: rgba(0, 196, 200, 0.25);
+  --border-subtle: rgba(255, 255, 255, 0.07);
+
+  /* Functional (forms only) */
+  --success: #3ddc84;
+  --error: #ff5c5c;
+}
+
+@theme inline {
+  --color-black: var(--black);
+  --color-dark: var(--dark);
+  --color-card: var(--card);
+  --color-surface-2: var(--surface-2);
+  --color-teal: var(--teal);
+  --color-teal-alt: var(--teal-alt);
+  --color-teal-glow: var(--teal-glow);
+  --color-white: var(--white);
+  --color-gray: var(--gray);
+  --color-gray-2: var(--gray-2);
+  --color-border: var(--border);
+  --color-border-subtle: var(--border-subtle);
+  --color-success: var(--success);
+  --color-error: var(--error);
+
+  --font-display: var(--font-bricolage);
+  --font-body: var(--font-space-grotesk);
+}
+
+html {
+  background: var(--black);
+}
+
+body {
+  background: var(--black);
+  color: var(--gray);
+  font-family: var(--font-body), sans-serif;
+  line-height: 1.6;
+}
+
+::selection {
+  background: var(--teal);
+  color: var(--black);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Signature hover glow — used sparingly, see design system §10.6 */
+.glow-hover {
+  transition: border-color 0.25s ease, box-shadow 0.25s ease, transform 0.25s ease;
+}
+.glow-hover:hover {
+  border-color: var(--border);
+  box-shadow: 0 0 30px var(--teal-glow);
+  transform: translateY(-2px);
+}
+
+/* Glass surface — nav and hero-overlay content only. Use with Tailwind's
+   backdrop-blur-md utility (hand-rolled backdrop-filter gets stripped by
+   the CSS pipeline's prefixing step). */
+.glass {
+  background: rgba(13, 13, 13, 0.7);
+}
