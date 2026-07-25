@@ -3,7 +3,7 @@ import { Suspense } from "react";
 import { ThankYouContent } from "@/components/composite/ThankYouContent";
 
 export const metadata: Metadata = {
-  title: "Thank You | ThriveStack",
+  title: "Thank You | Trivestack",
   robots: { index: false, follow: false },
 };
 

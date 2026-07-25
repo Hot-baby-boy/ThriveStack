@@ -7,9 +7,9 @@ import { FAQAccordion } from "@/components/composite/FAQAccordion";
 import { type FaqItem } from "@/lib/site-data";
 
 export const metadata: Metadata = {
-  title: "FAQ | ThriveStack",
+  title: "FAQ | Trivestack",
   description:
-    "Answers to common questions about our services, projects, pricing, marketing, AI, and what it's like working with ThriveStack.",
+    "Answers to common questions about our services, projects, pricing, marketing, AI, and what it's like working with Trivestack.",
 };
 
 const faqGroups: { category: string; items: FaqItem[] }[] = [

@@ -1102,7 +1102,7 @@ export const placeholderWork: WorkProject[] = [
 // TODO: replace with real client quotes once available (decision #9)
 export const placeholderTestimonials = [
   {
-    quote: "Working with ThriveStack felt like adding an experienced product team to our business.",
+    quote: "Working with Trivestack felt like adding an experienced product team to our business.",
     name: "Founder",
     role: "B2B SaaS Startup",
   },

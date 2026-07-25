@@ -4,7 +4,7 @@ import { FinalCTA } from "@/components/sections/FinalCTA";
 import { Reveal } from "@/components/motion/Reveal";
 
 export const metadata: Metadata = {
-  title: "Our Process | ThriveStack",
+  title: "Our Process | Trivestack",
   description:
     "Every successful project starts with understanding your business. Our proven process keeps every engagement collaborative, transparent, and focused on measurable outcomes.",
 };

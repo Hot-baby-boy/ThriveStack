@@ -37,10 +37,10 @@ export async function generateMetadata({
   if (!resolved) return {};
 
   if (resolved.kind === "hub" || resolved.kind === "combined") {
-    return { title: `${resolved.pillar.name} | ThriveStack`, description: resolved.pillar.tagline };
+    return { title: `${resolved.pillar.name} | Trivestack`, description: resolved.pillar.tagline };
   }
   return {
-    title: `${resolved.flagship.name} | ThriveStack`,
+    title: `${resolved.flagship.name} | Trivestack`,
     description: resolved.flagship.whatItIs,
   };
 }

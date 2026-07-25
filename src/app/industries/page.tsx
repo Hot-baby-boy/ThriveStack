@@ -6,7 +6,7 @@ import { Reveal } from "@/components/motion/Reveal";
 import { industries } from "@/lib/site-data";
 
 export const metadata: Metadata = {
-  title: "Industries | ThriveStack",
+  title: "Industries | Trivestack",
   description:
     "Brand, product, and growth work across SaaS, startups, ecommerce, fintech, healthtech, enterprise, construction and interior design, and fashion.",
 };

@@ -5,7 +5,7 @@ import { PortfolioGrid } from "@/components/composite/PortfolioGrid";
 import { placeholderWork } from "@/lib/site-data";
 
 export const metadata: Metadata = {
-  title: "Work | ThriveStack",
+  title: "Work | Trivestack",
   description:
     "Selected projects across brand identity, product development, AI solutions, and growth strategy.",
 };

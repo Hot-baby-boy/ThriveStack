@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import { LegalPageTemplate } from "@/components/templates/LegalPageTemplate";
 
 export const metadata: Metadata = {
-  title: "Terms of Service | ThriveStack",
-  description: "The terms that govern use of the ThriveStack website.",
+  title: "Terms of Service | Trivestack",
+  description: "The terms that govern use of the Trivestack website.",
 };
 
 export default function TermsOfServicePage() {
@@ -14,7 +14,7 @@ export default function TermsOfServicePage() {
       sections={[
         {
           heading: "1. Welcome",
-          body: ["Welcome to ThriveStack.", "By using our website, you agree to these Terms of Service."],
+          body: ["Welcome to Trivestack.", "By using our website, you agree to these Terms of Service."],
         },
         {
           heading: "2. Website Use",
@@ -25,7 +25,7 @@ export default function TermsOfServicePage() {
         {
           heading: "3. Intellectual Property",
           body: [
-            "All content on this website, including text, graphics, branding, logos, and designs, belongs to ThriveStack unless otherwise stated.",
+            "All content on this website, including text, graphics, branding, logos, and designs, belongs to Trivestack unless otherwise stated.",
             "You may not copy, reproduce, or distribute our content without permission.",
           ],
         },

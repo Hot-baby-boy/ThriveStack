@@ -6,7 +6,7 @@ import { PillarCard } from "@/components/composite/PillarCard";
 import { servicePillars } from "@/lib/site-data";
 
 export const metadata: Metadata = {
-  title: "Services | ThriveStack",
+  title: "Services | Trivestack",
   description:
     "Branding, websites, software, AI solutions, and growth strategy. Everything a business needs to build, launch, and scale online, under one team.",
 };

@@ -33,7 +33,7 @@ export const blogPosts: BlogPost[] = [
     slug: "why-every-business-needs-brand-identity-before-marketing",
     category: "Brand Identity & Strategy",
     focusKeyword: "brand identity",
-    seoTitle: "Why Every Business Needs a Strong Brand Identity Before Marketing | ThriveStack",
+    seoTitle: "Why Every Business Needs a Strong Brand Identity Before Marketing | Trivestack",
     metaDescription:
       "Branding is more than a logo. Learn why a clear brand identity builds trust, recognition, and long term growth before you spend a dollar on marketing.",
     title: "Why Every Business Needs a Strong Brand Identity Before Marketing",
@@ -154,7 +154,7 @@ export const blogPosts: BlogPost[] = [
     slug: "signs-its-time-to-redesign-your-business-website",
     category: "Website Design & Development",
     focusKeyword: "website redesign",
-    seoTitle: "10 Signs It's Time to Redesign Your Business Website | ThriveStack",
+    seoTitle: "10 Signs It's Time to Redesign Your Business Website | Trivestack",
     metaDescription:
       "Is your website costing you customers? Discover the 10 warning signs your business website needs a redesign, and what a modern, conversion focused site fixes.",
     title: "10 Signs It's Time to Redesign Your Business Website",
@@ -272,7 +272,7 @@ export const blogPosts: BlogPost[] = [
     slug: "what-makes-a-great-digital-product-uiux-design-guide",
     category: "Product Design (UI/UX)",
     focusKeyword: "UI/UX design",
-    seoTitle: "What Makes a Great Digital Product? A Guide to Modern UI/UX Design | ThriveStack",
+    seoTitle: "What Makes a Great Digital Product? A Guide to Modern UI/UX Design | Trivestack",
     metaDescription:
       "Explore the principles behind intuitive digital products and how thoughtful UI/UX design improves user satisfaction, retention, and business success.",
     title: "What Makes a Great Digital Product? A Guide to Modern UI/UX Design",
@@ -386,7 +386,7 @@ export const blogPosts: BlogPost[] = [
     slug: "how-ai-is-helping-businesses-work-smarter-not-harder",
     category: "AI Solutions & Automation",
     focusKeyword: "AI automation for business",
-    seoTitle: "How AI Is Helping Businesses Work Smarter, Not Harder | ThriveStack",
+    seoTitle: "How AI Is Helping Businesses Work Smarter, Not Harder | Trivestack",
     metaDescription:
       "Discover practical ways businesses are using AI to automate repetitive tasks, improve customer experiences, and increase productivity, without needing a technical team.",
     title: "How AI Is Helping Businesses Work Smarter, Not Harder",
@@ -503,7 +503,7 @@ export const blogPosts: BlogPost[] = [
     slug: "digital-marketing-strategies-every-growing-business-should-know",
     category: "Digital Marketing",
     focusKeyword: "digital marketing strategy",
-    seoTitle: "The Digital Marketing Strategies Every Growing Business Should Know | ThriveStack",
+    seoTitle: "The Digital Marketing Strategies Every Growing Business Should Know | Trivestack",
     metaDescription:
       "A practical guide to building an online presence, attracting qualified leads, and turning visitors into loyal customers, without wasting your marketing budget.",
     title: "The Digital Marketing Strategies Every Growing Business Should Know",
@@ -603,7 +603,7 @@ export const blogPosts: BlogPost[] = [
     slug: "lead-generation-explained-how-to-attract-high-quality-clients",
     category: "Lead Generation",
     focusKeyword: "lead generation",
-    seoTitle: "Lead Generation Explained: How to Consistently Attract High Quality Clients | ThriveStack",
+    seoTitle: "Lead Generation Explained: How to Consistently Attract High Quality Clients | Trivestack",
     metaDescription:
       "Understand how successful businesses build predictable lead generation systems instead of relying on referrals alone, and how to start building yours.",
     title: "Lead Generation Explained: How to Consistently Attract High Quality Clients",
@@ -706,7 +706,7 @@ export const blogPosts: BlogPost[] = [
     slug: "how-to-grow-your-business-on-social-media-without-chasing-trends",
     category: "Social Media Growth",
     focusKeyword: "social media growth strategy",
-    seoTitle: "How to Grow Your Business on Social Media Without Chasing Trends | ThriveStack",
+    seoTitle: "How to Grow Your Business on Social Media Without Chasing Trends | Trivestack",
     metaDescription:
       "Learn how to build a sustainable social media strategy that builds trust, increases engagement, and supports long term business growth, without burning out chasing trends.",
     title: "How to Grow Your Business on Social Media Without Chasing Trends",

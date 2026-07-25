@@ -7,7 +7,7 @@ export function WhyThriveStack() {
     <section className="border-b border-border-subtle bg-black py-24">
       <div className="mx-auto max-w-[1280px] px-6 lg:px-12">
         <Reveal>
-          <SectionLabel>Why Choose ThriveStack</SectionLabel>
+          <SectionLabel>Why Choose Trivestack</SectionLabel>
           <h2 className="max-w-[560px] font-display text-[clamp(28px,3.5vw,40px)] font-extrabold leading-[1.15] text-white">
             Not another freelancer. Not another slow agency.
           </h2>

@@ -13,7 +13,7 @@ export function Footer() {
           <div className="flex flex-col gap-4">
             <Image
               src="/thrivestack-logo.svg"
-              alt="ThriveStack"
+              alt="Trivestack"
               width={780}
               height={176}
               className="h-6 w-auto"
@@ -55,7 +55,7 @@ export function Footer() {
         </div>
 
         <div className="mt-16 flex flex-col items-center justify-between gap-4 border-t border-border-subtle pt-8 text-xs text-gray-2 md:flex-row">
-          <span>© {year} ThriveStack. All rights reserved.</span>
+          <span>© {year} Trivestack. All rights reserved.</span>
           <div className="flex gap-6">
             <Link href="/privacy-policy" className="hover:text-white">
               Privacy Policy

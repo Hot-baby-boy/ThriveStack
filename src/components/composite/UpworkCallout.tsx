@@ -8,7 +8,7 @@ type UpworkCalloutProps = {
 };
 
 // Upwork is a secondary trust signal / alternative hiring path, never the
-// primary CTA — kept visually subordinate to ThriveStack's own conversion
+// primary CTA — kept visually subordinate to Trivestack's own conversion
 // flows (no glow-hover, no teal border, muted relative to primary cards).
 export function UpworkCallout({ title, copy, compact = false }: UpworkCalloutProps) {
   return (

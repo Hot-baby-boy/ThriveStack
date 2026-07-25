@@ -5,18 +5,18 @@ import { Reveal } from "@/components/motion/Reveal";
 import { SectionLabel } from "@/components/primitives/SectionLabel";
 
 export const metadata: Metadata = {
-  title: "About | ThriveStack",
+  title: "About | Trivestack",
   description:
-    "ThriveStack is a digital growth agency that helps ambitious businesses build meaningful brands, exceptional digital experiences, and sustainable growth strategies.",
+    "Trivestack is a digital growth agency that helps ambitious businesses build meaningful brands, exceptional digital experiences, and sustainable growth strategies.",
 };
 
 const story = [
-  "That's why ThriveStack exists.",
+  "That's why Trivestack exists.",
   "We are a digital growth agency that helps ambitious businesses build meaningful brands, exceptional digital experiences, and sustainable growth strategies. Whether you're launching something new, scaling an existing business, or repositioning your brand for the next stage, we partner with you to create work that delivers measurable results.",
   "We believe that great design should solve problems, not just look beautiful. Every brand identity, website, product interface, AI solution, and marketing strategy we create is built around a single objective: helping your business grow.",
   "Our approach combines strategy, creativity, technology, and data into one seamless process. Instead of treating branding, design, development, and marketing as separate services, we bring them together into one cohesive system where every decision supports your business goals.",
   "From startups taking their first steps to established companies entering new markets, we work alongside our clients as long term partners. We take the time to understand your vision, your audience, your challenges, and the opportunities that make your business unique.",
-  "At ThriveStack, relationships matter just as much as results. We value clear communication, honest collaboration, thoughtful execution, and continuous improvement. Every project is built with care, transparency, and a commitment to delivering work that creates lasting impact.",
+  "At Trivestack, relationships matter just as much as results. We value clear communication, honest collaboration, thoughtful execution, and continuous improvement. Every project is built with care, transparency, and a commitment to delivering work that creates lasting impact.",
 ];
 
 const whatWeDo = [
@@ -34,7 +34,7 @@ export default function AboutPage() {
     <>
       <PageHeader
         label="About"
-        title="About ThriveStack"
+        title="About Trivestack"
         description="Turning an idea into a brand people trust, a product people love, and a business that keeps growing is where the real challenge begins."
       />
 
@@ -107,7 +107,7 @@ export default function AboutPage() {
               execution, and the right partnership.
             </p>
             <p className="mt-4 text-[15px] text-gray-2">
-              That's what we deliver every day at ThriveStack.
+              That's what we deliver every day at Trivestack.
             </p>
           </Reveal>
         </div>

@@ -8,7 +8,7 @@ export function UpworkTrustSection() {
       <div className="mx-auto max-w-[720px] px-6 lg:px-12">
         <UpworkCallout
           title="Prefer Working Through Upwork?"
-          copy="If your company already uses Upwork, you can also hire ThriveStack through our verified Upwork Agency. Enjoy secure contracts, milestone payments, and Upwork's trusted collaboration platform."
+          copy="If your company already uses Upwork, you can also hire Trivestack through our verified Upwork Agency. Enjoy secure contracts, milestone payments, and Upwork's trusted collaboration platform."
         />
       </div>
     </section>

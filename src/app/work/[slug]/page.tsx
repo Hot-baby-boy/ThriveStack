@@ -20,7 +20,7 @@ export async function generateMetadata({
   const project = placeholderWork.find((p) => p.slug === slug);
   if (!project) return {};
   return {
-    title: `${project.title} | ThriveStack`,
+    title: `${project.title} | Trivestack`,
     description: project.description,
   };
 }

@@ -4,7 +4,7 @@ import { ContactForm } from "@/components/composite/ContactForm";
 import { UpworkCallout } from "@/components/composite/UpworkCallout";
 
 export const metadata: Metadata = {
-  title: "Contact | ThriveStack",
+  title: "Contact | Trivestack",
   description:
     "Have a question, a partnership idea, or something that doesn't fit a project brief? Send us a message.",
 };
@@ -24,7 +24,7 @@ export default function ContactPage() {
           <UpworkCallout
             compact
             title="Prefer to Hire Through Upwork?"
-            copy="Already using Upwork? You can also hire ThriveStack through our verified Upwork Agency if you prefer managing your project there."
+            copy="Already using Upwork? You can also hire Trivestack through our verified Upwork Agency if you prefer managing your project there."
           />
         </div>
       </section>

@@ -17,9 +17,9 @@ const bricolage = Bricolage_Grotesque({
   weight: ["600", "700", "800"],
 });
 
-const title = "ThriveStack, Digital Growth & Product Agency";
+const title = "Trivestack, Digital Growth & Product Agency";
 const description =
-  "ThriveStack helps businesses build, grow, and scale online through branding, websites, custom software, and AI solutions.";
+  "Trivestack helps businesses build, grow, and scale online through branding, websites, custom software, and AI solutions.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     title,
     description,
     url: SITE_URL,
-    siteName: "ThriveStack",
+    siteName: "Trivestack",
     type: "website",
   },
   twitter: {

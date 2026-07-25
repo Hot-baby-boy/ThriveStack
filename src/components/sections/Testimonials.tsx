@@ -9,7 +9,7 @@ export function Testimonials() {
         <Reveal>
           <SectionLabel>Client Success Stories</SectionLabel>
           <h2 className="max-w-[560px] font-display text-[clamp(28px,3.5vw,40px)] font-extrabold leading-[1.15] text-white">
-            See what our clients say about working with ThriveStack.
+            See what our clients say about working with Trivestack.
           </h2>
         </Reveal>
 

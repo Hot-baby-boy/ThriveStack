@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import { LegalPageTemplate } from "@/components/templates/LegalPageTemplate";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy | ThriveStack",
-  description: "How ThriveStack collects, uses, and protects your information.",
+  title: "Privacy Policy | Trivestack",
+  description: "How Trivestack collects, uses, and protects your information.",
 };
 
 export default function PrivacyPolicyPage() {
@@ -15,7 +15,7 @@ export default function PrivacyPolicyPage() {
         {
           heading: "1. Our Commitment to Your Privacy",
           body: [
-            "At ThriveStack, we value your privacy and believe in being transparent about how we handle the information you share with us.",
+            "At Trivestack, we value your privacy and believe in being transparent about how we handle the information you share with us.",
             "This Privacy Policy explains what information we collect, how we use it, and how we protect it.",
           ],
         },
@@ -57,7 +57,7 @@ export default function PrivacyPolicyPage() {
           heading: "4. Sharing Your Information",
           body: [
             "We do not sell, rent, or trade your personal information.",
-            "Your information is only used by ThriveStack to respond to your enquiry.",
+            "Your information is only used by Trivestack to respond to your enquiry.",
           ],
         },
         {

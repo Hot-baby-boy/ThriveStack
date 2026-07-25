@@ -6,7 +6,7 @@ import { Reveal } from "@/components/motion/Reveal";
 import { blogPosts } from "@/lib/blog-data";
 
 export const metadata: Metadata = {
-  title: "Blog | ThriveStack",
+  title: "Blog | Trivestack",
   description:
     "Practical, no-fluff guides on brand identity, website design, product design, AI, digital marketing, lead generation, and social media growth.",
 };

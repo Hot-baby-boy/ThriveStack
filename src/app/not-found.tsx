@@ -3,7 +3,7 @@ import { Reveal } from "@/components/motion/Reveal";
 import { Button } from "@/components/primitives/Button";
 
 export const metadata: Metadata = {
-  title: "Page Not Found | ThriveStack",
+  title: "Page Not Found | Trivestack",
   robots: { index: false, follow: false },
 };
 

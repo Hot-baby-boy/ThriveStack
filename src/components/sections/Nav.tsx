@@ -13,10 +13,10 @@ export function Nav() {
   return (
     <header className="glass sticky top-0 z-50 border-b border-border-subtle backdrop-blur-md">
       <div className="mx-auto flex max-w-[1280px] items-center justify-between px-6 py-4 lg:px-12">
-        <Link href="/" aria-label="ThriveStack home" className="block">
+        <Link href="/" aria-label="Trivestack home" className="block">
           <Image
             src="/thrivestack-logo.svg"
-            alt="ThriveStack"
+            alt="Trivestack"
             width={780}
             height={176}
             priority
