@@ -73,16 +73,26 @@ export function ProjectIntakeWizard() {
     setStep((s) => Math.max(s - 1, 1));
   }
 
-  function handleSubmit() {
+  async function handleSubmit() {
     if (!name.trim() || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
       setError("Enter your name and a valid email so we can get back to you.");
       return;
     }
     setError("");
     setSubmitting(true);
-    // No backend yet (Phase 1 intake API is a future build step). For now,
-    // route to the Thank You page with the collected context in the URL.
-    router.push("/thank-you?type=project");
+
+    try {
+      const res = await fetch("/api/start-a-project", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ name, email, company, message, pillars, stage, budget, timeline }),
+      });
+      if (!res.ok) throw new Error("Request failed");
+      router.push("/thank-you?type=project");
+    } catch {
+      setSubmitting(false);
+      setError("Something went wrong submitting your project. Please try again in a moment.");
+    }
   }
 
   return (

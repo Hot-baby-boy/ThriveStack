@@ -15,7 +15,7 @@ export function ContactForm() {
   const [error, setError] = useState("");
   const [submitting, setSubmitting] = useState(false);
 
-  function handleSubmit(e: React.FormEvent) {
+  async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
     if (!name.trim() || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email) || !message.trim()) {
       setError("Fill in your name, a valid email, and a short message.");
@@ -23,8 +23,19 @@ export function ContactForm() {
     }
     setError("");
     setSubmitting(true);
-    // No backend yet (Phase 1 intake API is a future build step).
-    router.push("/thank-you?type=contact");
+
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ name, email, message, inquiryType }),
+      });
+      if (!res.ok) throw new Error("Request failed");
+      router.push("/thank-you?type=contact");
+    } catch {
+      setSubmitting(false);
+      setError("Something went wrong sending your message. Please try again in a moment.");
+    }
   }
 
   return (

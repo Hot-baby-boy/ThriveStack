@@ -11,3 +11,13 @@ export const UPWORK_AGENCY_URL = "https://www.upwork.com/agencies/20795110476004
 // environment variables instead of editing this file, so previews and
 // production can point at different URLs automatically.
 export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000";
+
+// Where Contact and Start a Project form submissions get emailed. Set as
+// a Vercel environment variable (NOTIFY_EMAIL) if this ever needs to change
+// without a code edit; falls back to this default otherwise.
+export const NOTIFY_EMAIL = process.env.NOTIFY_EMAIL || "trivestack@gmail.com";
+
+// Resend's shared sending address, usable before a custom domain is
+// verified with Resend. Once a domain is verified there (Resend dashboard
+// > Domains), switch this to something like "Trivestack <hello@yourdomain.com>".
+export const FROM_EMAIL = process.env.RESEND_FROM_EMAIL || "Trivestack <onboarding@resend.dev>";
