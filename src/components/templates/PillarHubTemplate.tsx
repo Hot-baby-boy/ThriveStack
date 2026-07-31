@@ -23,7 +23,11 @@ export function PillarHubTemplate({ pillar }: { pillar: ServicePillar }) {
 
   return (
     <>
-      <PageHeader label="Services" title={pillar.name} description={pillar.tagline} />
+      <PageHeader
+        label="Services"
+        title={pillar.name}
+        description={pillar.pageDescription ?? pillar.tagline}
+      />
 
       <section className="border-b border-border-subtle bg-black py-24">
         <div className="mx-auto max-w-[1280px] px-6 lg:px-12">

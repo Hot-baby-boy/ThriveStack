@@ -10,7 +10,7 @@ export function FeaturedServices() {
         <Reveal>
           <SectionLabel>What We Do</SectionLabel>
           <h2 className="max-w-[560px] font-display text-[clamp(28px,3.5vw,40px)] font-extrabold leading-[1.15] text-white">
-            Seven disciplines, one team.
+            Eight disciplines, one team.
           </h2>
         </Reveal>
 

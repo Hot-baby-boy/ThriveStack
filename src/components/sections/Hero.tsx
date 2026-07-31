@@ -39,9 +39,9 @@ export function Hero() {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="mt-6 max-w-[600px] text-[17px] font-light leading-[1.8] text-gray"
         >
-          From strategy and branding to websites, AI solutions, and digital
-          marketing, we help ambitious businesses turn ideas into measurable
-          growth.
+          From strategy and branding to websites, AI solutions, digital
+          marketing, and book publishing, we help businesses, startups,
+          entrepreneurs, and authors build, launch, and grow.
         </motion.p>
 
         <motion.div

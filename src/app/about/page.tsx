@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 
 const story = [
   "That's why Trivestack exists.",
-  "We are a digital growth agency that helps ambitious businesses build meaningful brands, exceptional digital experiences, and sustainable growth strategies. Whether you're launching something new, scaling an existing business, or repositioning your brand for the next stage, we partner with you to create work that delivers measurable results.",
+  "We are a digital growth agency that helps ambitious businesses and authors transform ideas into impactful digital experiences and successful publishing projects. Whether you're launching something new, scaling an existing business, publishing your first book, or repositioning your brand for the next stage, we partner with you to create work that delivers measurable results.",
   "We believe that great design should solve problems, not just look beautiful. Every brand identity, website, product interface, AI solution, and marketing strategy we create is built around a single objective: helping your business grow.",
   "Our approach combines strategy, creativity, technology, and data into one seamless process. Instead of treating branding, design, development, and marketing as separate services, we bring them together into one cohesive system where every decision supports your business goals.",
   "From startups taking their first steps to established companies entering new markets, we work alongside our clients as long term partners. We take the time to understand your vision, your audience, your challenges, and the opportunities that make your business unique.",
@@ -21,12 +21,12 @@ const story = [
 
 const whatWeDo = [
   "Brand Identity & Strategy",
+  "UI/UX & Product Design",
   "Website Design & Development",
-  "Product & UI/UX Design",
-  "AI Powered Solutions",
+  "SaaS & Mobile App Design",
+  "AI Solutions & Automation",
   "Digital Marketing",
-  "Lead Generation",
-  "Social Media Growth",
+  "Book Publishing & Marketing",
 ];
 
 export default function AboutPage() {

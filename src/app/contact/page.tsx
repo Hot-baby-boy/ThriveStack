@@ -20,6 +20,10 @@ export default function ContactPage() {
 
       <section className="bg-black py-20">
         <div className="mx-auto flex max-w-[600px] flex-col gap-10 px-6 lg:px-0">
+          <p className="text-[13.5px] leading-[1.7] text-gray-2">
+            Reach out for branding, website design, product design, AI solutions, digital
+            marketing, or book publishing &amp; marketing, whatever stage you&apos;re at.
+          </p>
           <ContactForm />
           <UpworkCallout
             compact

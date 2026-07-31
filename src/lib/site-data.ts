@@ -17,6 +17,10 @@ export type ServicePillar = {
   name: string;
   slug: string;
   tagline: string;
+  // Optional longer version of the tagline, shown only on the pillar's own
+  // hub/flagship page header. Falls back to tagline everywhere else (cards,
+  // nav menu, footer) so those stay short and scannable.
+  pageDescription?: string;
   subOfferings: ServiceOffering[];
   // "combined": the hub URL itself is also the flagship page (Screen 4 template)
   // "separate": hub page (Screen 3 template) links out to a standalone flagship slug
@@ -537,6 +541,8 @@ export const servicePillars: ServicePillar[] = [
     name: "Growth Services",
     slug: "growth-services",
     tagline: "Turn traffic into customers with data-driven growth.",
+    pageDescription:
+      "We help businesses and authors grow through strategic digital marketing. From SEO, lead generation, content marketing, social media, and email automation to Amazon KDP marketing, A+ Content, and book launch campaigns, we drive visibility, engagement, and measurable growth.",
     subOfferings: [
       {
         name: "SEO",
@@ -651,6 +657,143 @@ export const servicePillars: ServicePillar[] = [
     ],
     flagship: "separate",
     flagshipSlug: "seo",
+  },
+  {
+    name: "Book Publishing & Marketing",
+    slug: "book-publishing-marketing",
+    tagline: "Turn your manuscript into a book that actually sells.",
+    subOfferings: [
+      {
+        name: "Amazon KDP Publishing",
+        differentiator:
+          "Most freelancers hand you a file and wish you luck. We handle the full KDP submission, trim size, categories, and keywords, so your book goes live without the rejection emails first-time authors run into.",
+        process: [
+          "Format your manuscript and cover to Amazon's exact specifications",
+          "Set up categories and keywords correctly the first time",
+          "Submit and monitor your book through Amazon's review process",
+        ],
+        result: "Your book goes live without the back-and-forth rejections most first-time authors hit.",
+      },
+      {
+        name: "Book Cover Design",
+        differentiator:
+          "A cover has about two seconds to earn a click on a crowded Amazon page. We design covers to perform in a thumbnail grid next to competitors, not just look good full-size.",
+        process: [
+          "Research your genre's bestseller covers",
+          "Design a cover that reads clearly even as a small thumbnail",
+          "Deliver print-ready and ebook-ready files in Amazon's required formats",
+        ],
+        result: "A cover built to earn the click in a crowded genre.",
+      },
+      {
+        name: "Interior Book Formatting",
+        differentiator:
+          "Formatting mistakes are one of the most common reasons KDP rejects a submission. We format to Amazon's exact print and ebook specs the first time.",
+        process: [
+          "Format your manuscript for both print and Kindle",
+          "Set consistent typography and chapter structure",
+          "Proof the final file against KDP's technical requirements",
+        ],
+        result: "A polished interior that passes KDP review the first time.",
+      },
+      {
+        name: "Amazon A+ Content Design",
+        differentiator:
+          "Most authors never touch A+ Content, and it shows. We design enhanced pages with comparison charts and brand story sections that keep readers on your page.",
+        process: [
+          "Audit what's currently converting on your book's product page",
+          "Design modules that answer a reader's real hesitations",
+          "Implement and test inside Amazon's A+ Content manager",
+        ],
+        result: "A product page that sells the book, not just displays it.",
+      },
+      {
+        name: "Amazon Listing Optimization",
+        differentiator:
+          "Most authors pick keywords by guessing. We research actual buyer search terms so your book shows up when readers are looking for something like it.",
+        process: [
+          "Research keywords and categories real readers search",
+          "Optimize your title, subtitle, description, and backend keywords",
+          "Monitor rankings and adjust as the algorithm shifts",
+        ],
+        result: "More of the right readers finding your book through Amazon search itself.",
+      },
+      {
+        name: "Book Landing Pages",
+        differentiator:
+          "A generic Amazon link asks a lot of a cold reader. We build a dedicated landing page that builds the case for your book before sending traffic to buy.",
+        process: [
+          "Design a page structured around your book's hook and audience",
+          "Build in email capture so interested readers aren't lost",
+          "Connect it to your launch and ad campaigns as the central hub",
+        ],
+        result: "A page that turns cold traffic into warm buyers.",
+      },
+      {
+        name: "Book Launch Strategy",
+        differentiator:
+          "Most authors publish and hope. We plan the launch like a product release, since Amazon's algorithm rewards early momentum, not effort spread thin over months.",
+        process: [
+          "Build a pre-launch plan to line up reviews and early readers",
+          "Sequence launch week for maximum sales velocity",
+          "Plan the post-launch push that keeps momentum going",
+        ],
+        result: "A launch week built to trigger Amazon's own algorithm.",
+      },
+      {
+        name: "Book Marketing & Promotion",
+        differentiator:
+          "We treat book marketing as an ongoing system, not a one-week push. Consistent, measured promotion outperforms a single burst that fades by month two.",
+        process: [
+          "Build a promotion calendar spanning launch and beyond",
+          "Run targeted ads and promotions matched to your genre's readers",
+          "Track what's driving sales and double down on what works",
+        ],
+        result: "Steady sales momentum months after launch, not just a spike in week one.",
+      },
+      {
+        name: "Social Media Promotion for Books",
+        differentiator:
+          "We build author platforms around content that sells the book without feeling like an ad every post, using your actual story and expertise.",
+        process: [
+          "Define a content approach built around your book's themes",
+          "Build a consistent posting rhythm on the platforms your readers use",
+          "Tie content back to launch and ongoing sales",
+        ],
+        result: "An author platform that sells books quietly, instead of shouting into an empty room.",
+      },
+      {
+        name: "Author Branding",
+        differentiator:
+          "A book is often the first of many. We build an author brand that extends beyond a single title, so your next book launches into an existing audience.",
+        process: [
+          "Define your author identity and positioning",
+          "Build a consistent visual and voice system across book, site, and social",
+          "Set up the foundation so your next launch builds on this one",
+        ],
+        result: "An audience that follows you, ready for whatever you publish next.",
+      },
+    ],
+    flagship: "combined",
+    whatItIs:
+      "A complete publishing and marketing system for authors, from Amazon KDP submission to launch strategy and ongoing promotion. Built for first-time and established authors who want their book to actually sell, not just exist on Amazon.",
+    timeline: "Most publishing and launch engagements run 4 to 8 weeks, depending on how much of the manuscript and cover work is already done.",
+    faq: [
+      {
+        question: "Do you help if my manuscript isn't finished yet?",
+        answer:
+          "Yes. We can start on cover design, positioning, and launch planning while you finish writing, so nothing sits idle waiting on the manuscript.",
+      },
+      {
+        question: "Do I need to already have a KDP account?",
+        answer: "No. We can set one up with you or work inside an existing account, whichever you already have.",
+      },
+      {
+        question: "Can you help market a book I already published?",
+        answer:
+          "Yes. We regularly take over marketing and promotion for books that are live but underperforming, not just new launches.",
+      },
+    ],
   },
 ];
 
