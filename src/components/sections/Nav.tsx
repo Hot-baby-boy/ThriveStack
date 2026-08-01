@@ -36,7 +36,7 @@ export function Nav() {
 
             {servicesOpen && (
               <div className="absolute left-1/2 top-full w-[760px] -translate-x-1/2 pt-4">
-                <div className="glass grid grid-cols-4 gap-6 rounded-2xl border border-border-subtle p-8 shadow-[0_20px_60px_rgba(0,0,0,0.5)] backdrop-blur-md">
+                <div className="grid grid-cols-4 gap-6 rounded-2xl border border-border-subtle bg-dark p-8 shadow-[0_20px_60px_rgba(0,0,0,0.6)]">
                   {servicePillars.map((pillar) => (
                     <div key={pillar.slug} className="flex flex-col gap-2">
                       <Link
