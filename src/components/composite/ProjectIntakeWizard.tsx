@@ -82,10 +82,23 @@ export function ProjectIntakeWizard() {
     setSubmitting(true);
 
     try {
+      const stageLabel = intakeStageOptions.find((o) => o.value === stage)?.label ?? stage;
+      const budgetLabel = intakeBudgetOptions.find((o) => o.value === budget)?.label ?? budget;
+      const timelineLabel = intakeTimelineOptions.find((o) => o.value === timeline)?.label ?? timeline;
+
       const res = await fetch("/api/start-a-project", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ name, email, company, message, pillars, stage, budget, timeline }),
+        body: JSON.stringify({
+          name,
+          email,
+          company,
+          message,
+          pillars,
+          stage: stageLabel,
+          budget: budgetLabel,
+          timeline: timelineLabel,
+        }),
       });
       if (!res.ok) throw new Error("Request failed");
       router.push("/thank-you?type=project");
@@ -248,6 +261,18 @@ export function ProjectIntakeWizard() {
 
               <div className="mt-8 flex flex-col gap-5">
                 <label className="flex flex-col gap-2">
+                  <span className="text-[13px] font-medium text-gray">
+                    Tell us about your project (optional)
+                  </span>
+                  <textarea
+                    value={message}
+                    onChange={(e) => setMessage(e.target.value)}
+                    rows={4}
+                    className="resize-none rounded-[10px] border border-border-subtle bg-surface-2 px-4 py-3 text-sm text-white outline-none focus:border-teal focus:shadow-[0_0_0_3px_var(--teal-glow)]"
+                    placeholder="What are you building? What problem are you trying to solve? The more context you provide, the better we can prepare for our conversation."
+                  />
+                </label>
+                <label className="flex flex-col gap-2">
                   <span className="text-[13px] font-medium text-gray">Name</span>
                   <input
                     value={name}
@@ -273,18 +298,6 @@ export function ProjectIntakeWizard() {
                     onChange={(e) => setCompany(e.target.value)}
                     className="rounded-[10px] border border-border-subtle bg-surface-2 px-4 py-3 text-sm text-white outline-none focus:border-teal focus:shadow-[0_0_0_3px_var(--teal-glow)]"
                     placeholder="Company name"
-                  />
-                </label>
-                <label className="flex flex-col gap-2">
-                  <span className="text-[13px] font-medium text-gray">
-                    Anything else we should know? (optional)
-                  </span>
-                  <textarea
-                    value={message}
-                    onChange={(e) => setMessage(e.target.value)}
-                    rows={4}
-                    className="resize-none rounded-[10px] border border-border-subtle bg-surface-2 px-4 py-3 text-sm text-white outline-none focus:border-teal focus:shadow-[0_0_0_3px_var(--teal-glow)]"
-                    placeholder="Links, context, deadlines, anything helpful."
                   />
                 </label>
               </div>
