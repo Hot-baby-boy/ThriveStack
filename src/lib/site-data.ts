@@ -1244,7 +1244,7 @@ export const placeholderWork: WorkProject[] = [
   },
   {
     slug: "cristina-domingos-books",
-    title: "Cristina Domingos",
+    title: "Book Publishing",
     category: "Book Publishing & Marketing",
     industry: "Christian Nonfiction",
     description:
