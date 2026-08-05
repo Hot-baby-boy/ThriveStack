@@ -1006,6 +1006,7 @@ export type WorkProject = {
   gallery?: { src: string; alt: string; caption: string }[];
   story?: string[];
   result?: string;
+  externalLinks?: { label: string; url: string }[];
 };
 
 export const placeholderWork: WorkProject[] = [
@@ -1240,6 +1241,59 @@ export const placeholderWork: WorkProject[] = [
     ],
     result:
       "A tool that removes the two biggest blockers for indie authors: not knowing if their files meet KDP's rules, and not being able to afford a professional cover designer.",
+  },
+  {
+    slug: "cristina-domingos-books",
+    title: "Cristina Domingos",
+    category: "Book Publishing & Marketing",
+    industry: "Christian Nonfiction",
+    description:
+      "Cover design and Amazon KDP formatting for a growing catalog of Christian nonfiction titles, published across English, Portuguese, Spanish, German, and Dutch editions.",
+    coverImage: "/work/cristina-domingos-books/cover.jpg",
+    gallery: [
+      {
+        src: "/work/cristina-domingos-books/way-god-changes-lives-mockup.jpg",
+        alt: "The Way God Changes Lives book cover mockup by Cristina Domingos",
+        caption: "\"The Way God Changes Lives\": a collection of life-changing testimonies",
+      },
+      {
+        src: "/work/cristina-domingos-books/way-god-changes-lives-cover-spread.jpg",
+        alt: "The Way God Changes Lives full front, spine, and back cover spread",
+        caption: "Full print-ready cover spread, formatted to KDP trim and spine specs",
+      },
+      {
+        src: "/work/cristina-domingos-books/seven-letters-mockup.jpg",
+        alt: "Seven Letters to the Churches book cover mockup by Cristina Domingos",
+        caption: "\"Seven Letters to the Churches\": restoring holiness and complete loyalty",
+      },
+      {
+        src: "/work/cristina-domingos-books/seven-letters-cover-spread.jpg",
+        alt: "Seven Letters to the Churches full front, spine, and back cover spread",
+        caption: "Full print-ready cover spread, with author bio and back copy",
+      },
+      {
+        src: "/work/cristina-domingos-books/spiritual-heart-checkup-mockup.jpg",
+        alt: "Spiritual Heart Check-Up book cover mockup by Cristina Domingos",
+        caption: "\"Spiritual Heart Check-Up\": a self-examination test",
+      },
+      {
+        src: "/work/cristina-domingos-books/spiritual-heart-checkup-cover-spread.jpg",
+        alt: "Spiritual Heart Check-Up full front, spine, and back cover spread",
+        caption: "Full print-ready cover spread, ready for KDP upload",
+      },
+    ],
+    story: [
+      "Cristina Domingos is a self-publishing author writing Christian nonfiction: testimony collections, devotionals, and self-examination guides. The brief was to take each manuscript to a finished, KDP-ready book: a cover that could hold its own on an Amazon search page, formatted print-ready for paperback, and clean enough to translate across multiple language editions without breaking the design.",
+      "Each cover was built around a single, legible focal image, restrained to the palette and typography, so the title reads clearly at thumbnail size, the size it's most often seen at first. The full wraparound spread, front, spine, and back, was then laid out to KDP's exact trim and bleed requirements, with back-cover copy and author bio designed to sell the book on its own before a reader even opens it.",
+      "The same cover system was rebuilt across English, Portuguese, Spanish, German, and Dutch editions, keeping every title recognizable as part of the same catalog while reading naturally in each language.",
+    ],
+    result:
+      "Multiple titles published and live on Amazon KDP across five languages, each with a print-ready cover built to Amazon's formatting requirements from the first submission.",
+    externalLinks: [
+      { label: "Seven Letters to the Churches", url: "https://a.co/d/01SlsIZ4" },
+      { label: "The Way God Changes Lives", url: "https://a.co/d/09vOPIKS" },
+      { label: "Spiritual Heart Check-Up", url: "https://a.co/d/0btGM1FW" },
+    ],
   },
 ];
 

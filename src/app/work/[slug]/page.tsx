@@ -5,6 +5,7 @@ import { PageHeader } from "@/components/sections/PageHeader";
 import { FinalCTA } from "@/components/sections/FinalCTA";
 import { Reveal } from "@/components/motion/Reveal";
 import { SectionLabel } from "@/components/primitives/SectionLabel";
+import { ExternalLinkIcon } from "@/components/primitives/ExternalLinkIcon";
 import { placeholderWork } from "@/lib/site-data";
 
 export function generateStaticParams() {
@@ -80,6 +81,28 @@ export default async function ProjectDetailPage({
                 <div className="mt-10 rounded-[14px] border border-border-subtle bg-card p-7">
                   <SectionLabel>The Result</SectionLabel>
                   <p className="mt-2 text-[15px] leading-[1.8] text-white">{project.result}</p>
+                </div>
+              </Reveal>
+            )}
+
+            {project.externalLinks && project.externalLinks.length > 0 && (
+              <Reveal delay={0.25}>
+                <div className="mt-10 rounded-[14px] border border-border-subtle bg-card p-7">
+                  <SectionLabel>View on Amazon</SectionLabel>
+                  <div className="mt-3 flex flex-col gap-2.5">
+                    {project.externalLinks.map((link) => (
+                      <a
+                        key={link.url}
+                        href={link.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex w-fit items-center gap-1.5 text-sm font-medium text-teal hover:underline"
+                      >
+                        {link.label}
+                        <ExternalLinkIcon />
+                      </a>
+                    ))}
+                  </div>
                 </div>
               </Reveal>
             )}
