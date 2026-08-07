@@ -8,7 +8,7 @@ const variants = {
   contact: {
     eyebrow: "Message Sent",
     title: "Message received.",
-    body: "Thanks for reaching out. We read every message and typically reply within 1 to 2 business days.",
+    body: "Thanks for reaching out. We read every message and typically reply within 24 hours.",
   },
   project: {
     eyebrow: "Project Submitted",
